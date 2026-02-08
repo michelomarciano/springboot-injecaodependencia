@@ -6,7 +6,7 @@ import br.com.springboot.injecaodependencia.notificacao.Notificador;
 import br.com.springboot.injecaodependencia.notificacao.NotificacaoEmail;
 
 @Configuration
-public class AlgaConfig {
+public class NotificadorConfig {
     
     @Bean
     public Notificador notificador() {
