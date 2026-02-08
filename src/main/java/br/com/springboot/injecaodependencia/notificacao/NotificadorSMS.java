@@ -1,10 +1,12 @@
 package br.com.springboot.injecaodependencia.notificacao;
 
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import br.com.springboot.injecaodependencia.modelo.Cliente;
 
+@Qualifier("urgente")
 @Component
 @Primary
 public class NotificadorSMS implements Notificador{
