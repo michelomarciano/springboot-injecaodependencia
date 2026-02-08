@@ -10,7 +10,7 @@ public class AtivacaoClienteService {
 
     private Notificador notificador;
 
-    @Autowired
+    @Autowired (required = false)
     public AtivacaoClienteService(Notificador notificador) {
         this.notificador = notificador;
     }
