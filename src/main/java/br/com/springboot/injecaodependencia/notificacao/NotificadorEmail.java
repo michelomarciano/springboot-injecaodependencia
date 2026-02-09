@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Primary;
 
 import br.com.springboot.injecaodependencia.modelo.Cliente;
 
-@Qualifier("normal")
+@TipoDoNotificador(NivelUrgencia.NORMAL)
 @Component
 public class NotificadorEmail implements Notificador {
 

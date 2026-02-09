@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 
 import br.com.springboot.injecaodependencia.modelo.Cliente;
 
-@Qualifier("urgente")
+@TipoDoNotificador(NivelUrgencia.URGENTE)
 @Component
 @Primary
 public class NotificadorSMS implements Notificador{
